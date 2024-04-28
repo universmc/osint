@@ -1,10 +1,14 @@
 /* style.css */
+html, body {
+  min-width: 100vh;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
 body {
   min-height: auto;
   min-width: auto;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -12,7 +16,7 @@ body {
 header {
   display: flex;
   min-width: 100%;
-  background-color: #333;
+  background-color: #1c1b1b;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -21,16 +25,19 @@ header {
 main {
   margin: 20px;
 }
-
-.cours-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-#sommaire {
+.mainContent {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
+}
+.mainContenair {
+  display:flex;
+  flex-direction:row;
+}
+#sommaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   width: 100%;
   gap: 20px;
   background-color: #eee;
@@ -38,6 +45,25 @@ main {
   margin-right: 20px;
   border-radius: 5px;
 }
+.picker {
+background-color:#333;
+border: none;
+}
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom .75s ease-in-out;
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+
+
+.cours-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 #contenuCours {
   width: 90%;
@@ -63,6 +89,7 @@ main {
 .markdown-contenu p {
   color: #666;
 }
+
 
 /* Ajoutez plus de styles ici selon vos besoins */
 footer {

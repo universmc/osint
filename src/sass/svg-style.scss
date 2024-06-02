@@ -1,0 +1,12 @@
+// svg-style.scss
+$primary-color: #007bff; // Bleu pour JavaScript
+$secondary-color: #28a745; // Vert pour Python
+$tertiary-color: #dc3545; // Rouge pour Ruby
+
+.svg-icon {
+  fill: $primary-color;
+  &:hover {
+    fill: darken($primary-color, 10%);
+  }
+  // Ajoutez des classes spécifiques pour chaque langue de programmation si nécessaire
+}

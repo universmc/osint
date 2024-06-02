@@ -1,0 +1,228 @@
+html, body {
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+* {box-sizing: border-box;}
+ 
+/* Header */
+
+header {
+    display: flex;
+    min-width: 100vh;
+    background-color: #333;
+    color: rgb(189, 187, 187);
+    text-align: center;
+    align-items: center;
+  }
+  .header-contenair {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+    gap:20px;
+  }
+  .header-titre {
+    display: flex;
+  }
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  /* Style de base pour la navigation */
+  .navBar {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    overflow: hidden;
+    list-style:none;
+  }
+  
+  /* Style de base pour les sous-menus */
+  .dropdown {
+    display: none;
+    position: absolute;
+  }
+  
+  /* Affiche le sous-menu lors du survol de l'élément parent */
+  .menu li:hover > .dropdown {
+    display: block;
+  }
+  
+  /* Style supplémentaire pour les sous-menus pour les rendre visuellement distincts */
+  .dropdown li {
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f0f0; /* Couleur de fond pour les sous-menus */
+  }
+
+.dropdown-programmation {
+        display: none;
+        position: absolute;
+        left:110px;
+}
+.dropdown-frontend {
+    display: none;
+    position: absolute;
+    left:70px;
+}
+
+.headerContenair {
+    display:flex;
+    flex-direction: row;
+}
+
+.navMenu {
+    display:flex;
+    position:fixed;
+    flex-direction:row;
+    margin: 5px;
+
+}
+.navBar ul li a{
+
+    color:white;
+    &:hover {
+        border-bottom: 2px rgb(76, 39, 76) solid;
+    }
+}
+.hero-bannier {
+    height: 70px;
+}
+
+/* header end */
+/* MAIN */
+main {
+    display: flex;
+    flex-direction:column;
+    min-width: 100vh;
+    min-height: 70vh;
+    align-items:center;
+}
+.mainContenair {
+    display:flex;
+    background-color: aliceblue;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+.S-content {
+    min-width:20%;
+}
+#sommaire {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    background-color: #eee;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+.js-content {
+    min-width: 80%;
+}
+.content {
+    min-width: 80vh;
+    background-color: black;
+    gap:20px;
+    border-radius: 10px;
+    color:white
+}
+.home {
+    background-color: white;
+}
+.navBar {
+    width:100%;
+    overflow: hidden;
+}
+
+nav .ulMl ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.frontend {
+    display: flex;
+    justify-content: center;
+}
+.ulMl ul {
+    gap: 20px
+}
+.ulMl li {
+    min-width: 20%;
+    text-align: center;
+    background-color: rgb(91, 73, 89);
+    border-radius: 10px;
+}
+/* start sectionS */
+.step-loader {
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    bottom: 28px;
+    position: fixed;
+}
+/* Machine-Learning */
+.MlContenair {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+.framWork {
+    min-width:100%;
+    border:1px;
+}
+
+.devops {
+    padding: 20px;
+    background-color: #ccdbe8;
+    display: flex;
+    flex-direction:column;
+}
+  .cours-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  #contenuCours {
+    min-width: 90%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .markdown-contenu {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .markdown-contenu h1, .markdown-contenu h2, .markdown-contenu h3 {
+    color: #333;
+  }
+  
+  .markdown-contenu p {
+    color: #666;
+  }
+  .projets {
+    display:center;
+    flex-direction:column;
+    width:90%;
+}
+  /* Ajoutez plus de styles ici selon vos besoins */
+  footer {
+    display:flex;
+    min-width: 100vh;
+  }

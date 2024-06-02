@@ -1,0 +1,14 @@
+{
+    "messages": [
+      {
+        "role": "user",
+        "content": ""
+      }
+    ],
+    "model": "gemma-7b-it",
+    "temperature": 1,
+    "max_tokens": 1024,
+    "top_p": 1,
+    "stream": true,
+    "stop": null
+}

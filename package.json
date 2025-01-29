@@ -1,8 +1,8 @@
 {
-    "name": "ascii",
+    "name": "osint",
     "version": "0.1.0",
     "private": true,
-    "main": "tablet.js",
+    "main": "main.js",
     "scripts": {
         "dev": "next dev",
         "start": "electron .",

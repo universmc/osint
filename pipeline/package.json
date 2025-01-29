@@ -1,0 +1,39 @@
+{
+  "name": "Μιχαήλ",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "saas": "sass --watch src/sass/devOps.scss src/css/windows.css",
+    "observer": "sass --watch src/sass/windows.scss src/css/style1/playeur.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNU",
+  "dependencies": {
+    "@electron-forge/plugin-webpack": "^7.3.0",
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "bootstrap": "^5.3.3",
+    "electron-forge": "^5.2.4",
+    "electron-router": "^0.5.1",
+    "groq": "^3.32.0",
+    "node-emoji": "^2.1.3",
+    "node-fetch": "^3.3.2",
+    "node-sass": "^9.0.0",
+    "openai": "^4.47.3",
+    "path": "^0.12.7",
+    "readline": "^1.3.0",
+    "speech-recognition": "^0.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron": "^29.1.1"
+  }
+}

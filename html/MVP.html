@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur π-coins</title>
+</head>
+<body>
+    <div>
+        <h1>Distribution de π-coins</h1>
+        <p>Revenu minimum garanti par cycle : 3300 π-coins</p>
+        <div id="coin-counter">Taux de π-coins par seconde : 0</div>
+        <div id="total-coins-distributed">Total de π-coins distribués : 0</div>
+    </div>
+    <button id="cycle-reset-btn">Réinitialiser le cycle</button>
+    
+    <script>
+        // Calculate the total number of seconds in 35 heures
+        const totalSeconds = 35 * 60 * 60;
+    
+        // Set the total number of π-coins to be distributed in one cycle
+        const totalCoins = 314;
+    
+        // Get the initial timestamp in seconds
+        let initialTimestamp = Math.floor(Date.now() / 1000);
+    
+        // Calculate the remaining seconds in the current cycle
+        let secondsInCycle = initialTimestamp % totalSeconds;
+    
+        // Variable to track the total π-coins distributed
+        let totalCoinsDistributed = 0;
+    
+        // Function to calculate the rate of coins per second based on the elapsed time
+        function calculateCoinsPerSecond(elapsedSeconds) {
+            const remainingSeconds = totalSeconds - elapsedSeconds;
+            const distributedCoins = (elapsedSeconds / totalSeconds) * totalCoins;
+            return (totalCoins - distributedCoins) / remainingSeconds;
+        }
+    
+        // Function to update the counter value and the total coins distributed
+        function updateCounter() {
+            const currentTimestamp = Math.floor(Date.now() / 1000);
+            const elapsedSeconds = (currentTimestamp - initialTimestamp + totalSeconds) % totalSeconds;
+    
+            // Update the coins per second rate
+            const coinsPerSecond = calculateCoinsPerSecond(elapsedSeconds);
+    
+            // Update the total π-coins distributed based on the elapsed time
+            totalCoinsDistributed = (elapsedSeconds / totalSeconds) * totalCoins;
+    
+            // Update the counter display
+            document.getElementById("coin-counter").innerHTML = `Taux de π-coins par seconde : ${coinsPerSecond.toFixed(4)}`;
+            document.getElementById("total-coins-distributed").innerHTML = `Total de π-coins distribués : ${totalCoinsDistributed.toFixed(4)}`;
+        }
+    
+        // Update the counter value every second
+        setInterval(updateCounter, 1000);
+    
+        // Reset the cycle when the button is clicked
+        document.getElementById("cycle-reset-btn").addEventListener("click", function() {
+            initialTimestamp = Math.floor(Date.now() / 1000);
+            totalCoinsDistributed = 0; // Reset the distributed coins
+        });
+    </script>
+</body>
+</html>

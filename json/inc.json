@@ -1,0 +1,13 @@
+{
+    "system": {
+      "Frontend": "Génération du frontend en utilisant la technologie choisie.",
+      "Backend": "Génération du backend avec la base de données et le langage choisi.",
+      "API REST": "Génération de l'API REST en fonction de la sélection."
+    },
+    "assistant": {
+      "Frontend": "Je vais générer un site web en utilisant la technologie HTML/CSS pour la partie frontend.",
+      "Backend": "Je vais générer le backend en utilisant le langage et la base de données sélectionnés.",
+      "API REST": "Je vais générer une API REST en fonction du framework choisi."
+    }
+  }
+  

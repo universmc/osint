@@ -7,21 +7,32 @@ COMMANDE1_MSG="✨ Menu ✨"
 
 work_MSG="✨ Lancement de workplan.json✨"
 CTRL_MSG="✨ Lancement du contrôleur NES✨"
+CTRL_MSG="✨ contructor✨"
+SAASL_MSG="✨ Lancement du SAAS✨"
+quit_MSG="✨ TChao TChahoo✨"
 COMMANDE1_MSG="✨ Lancement de groq server✨"
-cmd_MSG="✨ Lancement de l'application✨"
-map_MSG="✨ Lancement de l'application MapAscii✨"
+
+saas:
+	@echo "${SAAS_MSG}"
+	@npm run saas
+commandeQ:
+	@echo "${quit_MSG}"
 
 groq:
 	@echo "${bot_MSG}"
 	@./telegram/groq.js
 
+build:
+	@echo "${bot_MSG}"
+	@./build.sht:
+
+chat:
+	@echo "${bot_MSG}"
+	@node chat.js
+
 bot:
 	@echo "${bot_MSG}"
 	@./models.sh
-
-qp:
-	@echo "${bot_MSG}"
-	@node qp.js
 
 ctrl:
 	@echo "${CTRL_MSG}"
@@ -31,7 +42,7 @@ wp:
 	@echo "${work_MSG}"
 	@node workplan.js
 map:
-	@echo "${map_MSG}"
+	@echo "${bot_MSG}"
 	@npm run map
 
 # Makefile pour mapper les boutons du contrôleur NES
@@ -53,7 +64,7 @@ menu:
 	@echo "Welcom To cycliq Economical system."
 	@echo""
 	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
-	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]              [🛰]║"
+	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]                   [🛰]║"
 	@echo"║                                     ║     ╠═════════════════════════════════════════════════════════════════════╣"
 	@echo"║                                     ║     ║                                                                     ║"
 	@echo"║                                     ║     ║                                                                     ║"
@@ -81,28 +92,6 @@ menu:
 
 MAGIC_TARGETS := codex build rep file script clean
 
-dev: tasks showTasks
-
-tasks:
-	@echo "✨ Initialisation Du plan d'action✨"
-	@node qp.js showTasks "/brainstrom 💰"
-
-# Tâche Make pour ajouter une tâche
-showTasks:
-	@node qp.js addTask $(task)
-	@cat readme.md
-	@npm run start
-
-test :
-	@node qp.js
-
-run:
-	@node ./srv/srv.js
-
-brainstorm:
-	@echo "✨ Initialisation de la session de brainstorming✨"
-	@node gdev.js
-	@echo "✨ Session terminée✨"
 
 
 all: $(MAGIC_TARGETS)
@@ -119,6 +108,10 @@ init: gantt phase1 phase2 phase3 phase4 phase5 phase6 phase7 phase8
 gantt:
 	@echo "initialisation de l'instance"
 	@git clone auto
+
+mission:
+	@echo "phase de conception"
+	@node mission.js
 
 seq1:
 	@echo "phase de conception"

@@ -1,0 +1,39 @@
+{
+    "project": "cursors",
+    "session": {
+    "topic": "Expressions régulières en JavaScript",
+    "duration": "2h",
+    "objectives": [
+    "Apprendre les concepts fondamentaux des expressions régulières",
+    "Découvrir les méthodes et les fonctions JavaScript associées",
+    "Appliquer les expressions régulières dans le développement de GPT-Wallet"
+    ],
+    "plan": [
+    {
+    "time": "1min",
+    "activity": "Introduction : importance des expressions régulières dans le développement"
+    },
+    {
+    "time": "10min",
+    "activity": "Explication des concepts fondamentaux des expressions régulières (ex : métacaractères, quantificateurs, groupes de capture)"
+    },
+    {
+    "time": "5min",
+    "activity": "Présentation des méthodes et fonctions JavaScript pour les expressions régulières (ex : `.match()`, `.replace()`, `RegExp`)"
+    },
+    {
+    "time": "10min",
+    "activity": "Exercices pratiques pour s'entraîner avec les expressions régulières"
+    },
+    {
+    "time": "20min",
+    "activity": "Discussion sur l'utilisation des expressions régulières dans GPT-Wallet"
+    },
+    {
+    "time": "10min",
+    "activity": "Conclusion et questions finales"
+    }
+    ]
+    }
+    }
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSiteMakers Phases</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Progression des Phases</h1>
+    <div class="phase">
+      <h2>Phase 1: Conception</h2>
+      <div id="chrono_conception" class="chronometer">00h 00m 00s</div>
+    </div>
+    <div class="phase">
+      <h2>Phase 2: Développement</h2>
+      <div id="chrono_dev" class="chronometer">00h 00m 00s</div>
+    </div>
+    <div class="phase">
+      <h2>Phase 3: Test</h2>
+      <div id="chrono_test" class="chronometer">00h 00m 00s</div>
+    </div>
+    <div class="phase">
+      <h2>Phase 4: Lancement</h2>
+      <div id="chrono_lancement" class="chronometer">00h 00m 00s</div>
+    </div>
+  </div>
+  <script src="../js/session.js"></script>
+  <script>
+    async function updateChronometer(id, phase) {
+      const response = await fetch(`/session?phase=${phase}`);
+      const data = await response.json();
+      document.getElementById(id).textContent = data.elapsedTime;
+    }
+
+    setInterval(() => {
+      updateChronometer('chrono_conception', 'conception');
+      updateChronometer('chrono_dev', 'developpement');
+      updateChronometer('chrono_test', 'test');
+      updateChronometer('chrono_lancement', 'lancement');
+    }, 1000);
+  </script>
+</body>
+</html>

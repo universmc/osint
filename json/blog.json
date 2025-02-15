@@ -1,0 +1,46 @@
+{
+    "roadmap": [
+        {
+            "step": "Étape 1 : Préparation",
+            "tasks": [
+                "Revoir la documentation relative à la présentation du blog web sémantique.",
+                "Analyser les sections présentes dans le fichier `srv/readme.md` afin de mieux comprendre les spécificités du serveur json."
+            ]
+        },
+        {
+            "step": "Étape 2 : Configuration du serveur json",
+            "tasks": [
+                "Établir une liste des points clés qui doivent être couverts lors de la configuration du serveur json.",
+                "Vérifier si des outils ou bibliothèques spécifiques sont nécessaires pour la configuration et l'implémentation."
+            ]
+        },
+        {
+            "step": "Étape 3 : Implémentation de l'Introduction CRUD",
+            "tasks": [
+                "Suivre les étapes pour l'implémentation de l'introduction CRUD, en tenant compte des meilleures pratiques et des connaissances acquises lors de la lecture de la documentation.",
+                "Utiliser le serveur json et son contenu pour l'implémentation de l'introduction CRUD."
+            ]
+        },
+        {
+            "step": "Étape 4 : Préparation au déploiement",
+            "tasks": [
+                "Lire les documents relatifs aux bonnes pratiques pour le déploiement et la maintenance des applications web.",
+                "Vérifier si le projet répond aux exigences pour un déploiement et une maintenance efficaces."
+            ]
+        },
+        {
+            "step": "Étape 5 : Étude du DevOps",
+            "tasks": [
+                "Lire l'introduction au DevOps dans le fichier `src/md/devops.md`.",
+                "Comprendre les principes clés du DevOps et comment ils peuvent s'appliquer à votre projet."
+            ]
+        },
+        {
+            "step": "Étape 6 : Déploiement et maintenance",
+            "tasks": [
+                "Apporter les modifications nécessaires pour le déploiement et la maintenance en se basant sur les connaissances acquises lors de la lecture de la documentation.",
+                "Assurer un déploiement réussi et une maintenance efficace de votre projet."
+            ]
+        }
+    ]
+}

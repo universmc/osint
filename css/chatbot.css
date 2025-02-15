@@ -1,0 +1,11 @@
+.prompt {
+    display:flex;
+    height:25px;
+    width:255px;
+  }
+  #result {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
